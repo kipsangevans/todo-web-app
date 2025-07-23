@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo List App</title>
+ 
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <h1>Todo List App</h1>
+ <div class="container">
+
+   <div class="left-side">
+
+
+
+<div class="box">
+    <h2>Projects</h2>
+
+  <button id="toggle-project-form">Create New Project</button>
+</div>
+<form id="add-project-form" style="display: none;">
+  <input type="text" name="project-name" placeholder="New Project Name" required />
+  <button type="submit">Add Project</button>
+</form>
+<br><br>
+  <ul id="project-list"></ul>
+
+
+
+  <hr>
+
+  </div>
+<div class="rigth-side">
+
+
+  <div class="box">
+    <h2>Todos</h2>
+
+
+<button id="toggle-todo-form">Create New  Todo</button>
+  </div>
+<form id="add-todo-form" style="display: none;">
+  <input type="text" name="title" placeholder="Title" required />
+  <input type="text" name="description" placeholder="Description" />
+  <input type="date" name="due-date" required />
+  <select name="priority" required>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select>
+
+  <button type="submit">Add Todo</button>
+</form>
+  
+  <br>
+
+  <hr>
+
+  
+  <div id="todo-list"></div>
+</div>
+
+ </div>
+ <footer id="footer">
+  <p>evanso@2025 &copy; copyright</p>
+</footer>
+
+
+  <!-- Webpack will inject the script tag -->
+</body>
+</html>

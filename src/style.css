@@ -1,0 +1,144 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('./modules/assets/fonts/AlexBrush-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  color: #333;
+  padding: 2rem;
+
+
+
+  
+
+ 
+
+}
+.container{
+  background-color: #f8f9fa;
+   display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 70vh;
+  padding: 10px;
+    border:0.5px solid rgb(231, 210, 210) ;
+    border-radius: 20px;
+
+}
+.left-side{
+    padding-right:20px ;
+}
+.rigth-side{
+    margin: 10px;
+}
+p{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+  text-align: center;
+    margin-bottom: 1rem;
+    background-color: #c6c9cc;
+    padding: 10px;
+    border-radius: 20px;
+}
+ h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  display: inline-grid;
+
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+.box,.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+input, select, button {
+  padding: 0.6rem;
+  font-size: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#project-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+#project-list li {
+  padding: 0.5rem;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.todo-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-left: 5px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.todo-item.low {
+  border-left-color: green;
+  background-color: #e6ffe6;
+}
+
+.todo-item.medium {
+  border-left-color: orange;
+  background-color: #fffbe6;
+}
+
+.todo-item.high {
+  border-left-color: red;
+  background-color: #ffe6e6;
+}
+form {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+button {
+  margin-top: 5px;
+}
+body,button,input{
+  font-family: 'MyFont', serif;
+  font-size: 1.2rem;
+ 
+}
+
